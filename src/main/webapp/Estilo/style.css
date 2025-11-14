@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    color: #333;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #333;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-container h2 {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.form-produto {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-venda {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.info-estoque {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 12px;
+}
+
+.valor-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-voltar {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.btn-voltar:hover {
+    color: #45a049;
+}
+
+.btn-logout {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #c82333;
+}
+
+.btn-edit {
+    background-color: #28a745;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #218838;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.menu-grid {
+    display: block;
+    margin-top: 30px;
+}
+
+.menu-card {
+    background-color: transparent;
+    border: none;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-card h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.btn-menu {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-menu:hover {
+    background-color: #45a049;
+}
+
+.tabela-produtos,
+.tabela-vendas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tabela-produtos thead,
+.tabela-vendas thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tabela-produtos th,
+.tabela-vendas th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabela-produtos td,
+.tabela-vendas td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabela-produtos tbody tr:hover,
+.tabela-vendas tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.tabela-produtos .empty,
+.tabela-vendas .empty {
+    text-align: center;
+    color: #999;
+    padding: 30px;
+}
+
+.acoes {
+    white-space: nowrap;
+}
+
+.total-row {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.total-row td {
+    border-top: 2px solid #4CAF50;
+}
+
+.raridade {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.raridade.comum {
+    background-color: #6c757d;
+    color: white;
+}
+
+.raridade.incomum {
+    background-color: #28a745;
+    color: white;
+}
+
+.raridade.rara {
+    background-color: #007bff;
+    color: white;
+}
+
+.raridade.épica {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.raridade.lendária {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #28a745;
+}
+
+.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #dc3545;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .login-container {
+        margin: 50px 20px;
+        padding: 30px 20px;
+    }
+    
+    .tabela-produtos,
+    .tabela-vendas {
+        font-size: 12px;
+    }
+    
+    .tabela-produtos th,
+    .tabela-produtos td,
+    .tabela-vendas th,
+    .tabela-vendas td {
+        padding: 8px;
+    }
+}

@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
-  <display-name>SistemaDeSkins</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.xhtml</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.xhtml</welcome-file>
-  </welcome-file-list>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"  
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" 
+         version="5.0">
+         
+    <!-- Nome da aplicação -->
+    <display-name>SkinMania - Sistema de Vendas de Skins</display-name>
+
+    <!-- Configuração do servlet Controller -->
+    <servlet> 
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>Controller.Controller</servlet-class>
+    </servlet>
+
+    <!-- Mapeamento de URL para o servlet -->
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/controller</url-pattern>
+    </servlet-mapping>
+
+    <!-- Página de boas-vindas -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>
